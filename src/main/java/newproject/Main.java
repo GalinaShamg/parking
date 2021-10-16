@@ -9,9 +9,10 @@ public class Main {
         CarsGotoParking thread1 = new CarsGotoParking();
         CarsGoAway thread2 = new CarsGoAway();
 
+        //TODO продумать потоки, чтобы не было ошибок
         thread1.start(); //пошел поток, заполняющий парковку
         thread2.start(); //пошел поток, опустошающий парковку
 
-
+        //TODO сделать цикличность, постоянную заполняемость и уход машин
     }
 }
